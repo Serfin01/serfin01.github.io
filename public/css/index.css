@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+header{
+    /* background-color: red; */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    /* background-color: blue; */
+    padding: 15px 0px 15px 0px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    margin-left:0px;
+    padding:0px;
+}
