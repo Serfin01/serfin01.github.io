@@ -1,6 +1,7 @@
 :root{
     --font-h1: clamp(3.2rem, .5692rem + 8.238vw, 13.75rem);
     --titleFont: 'Unbounded', cursive;
+    --bodyFont: 'Montserrat', sans-serif;
     --fontColorTitle: #FA4935;
     --colorButton: #FEE2DF;
     --colorButtonText: #fa9a66;
@@ -24,6 +25,14 @@ h1{
     font-weight: 700;
     letter-spacing: -2px;
     text-align: center;
+}
+h2{
+    font-family: var(--bodyFont);
+    color: var(--fontColorTitle);
+    line-height: 160%;
+    margin-top: 65px;
+    text-align: center;
+    padding: 0px 20% 0px 20%;
 }
 nav{
     /* background-color: blue; */
@@ -119,4 +128,8 @@ body{
 }
 #toni{
     margin-top: 900px;
+}
+.a{
+    width: 5%;
+    height: 5%;
 }
