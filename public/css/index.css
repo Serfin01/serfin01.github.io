@@ -129,7 +129,19 @@ body{
 #toni{
     margin-top: 900px;
 }
-.a{
+.fotos{
+    border: red solid;
+    margin: 3%;
+}
+.logo{
     width: 5%;
     height: 5%;
+}
+.language,
+.editor,
+.controlVersion,
+.engine,
+.db,
+.otros{
+    display: flex;
 }
