@@ -5,6 +5,8 @@
     --fontColorTitle: #FA4935;
     --colorButton: #FEE2DF;
     --colorButtonText: #fa9a66;
+    --secundaryColor: #e8804a;
+    --selected: #c26330;
 }
 *{
     margin: 0;
@@ -16,6 +18,9 @@ header{
     padding: 15px;
     display: flex;
     justify-content: center;
+}
+section{
+    margin-inline: 5%;
 }
 h1{
     margin-top: 70px;
@@ -33,6 +38,13 @@ h2{
     margin-top: 65px;
     text-align: center;
     padding: 0px 20% 0px 20%;
+}
+h3{
+    font-family: var(--titleFont);
+    color: var(--fontColorTitle);
+    line-height: 160%;
+    margin-top: 65px;
+    font-size: 30px;
 }
 nav{
     /* background-color: blue; */
@@ -101,7 +113,7 @@ nav .slider{
 input[type=radio]{
     display: none;
 }
-ul{
+/* ul{
     display: flex;
     list-style: none;
     width: 100%;
@@ -114,6 +126,27 @@ ul li{
     border-radius: 15px;
     font-weight: bold;
     background-color: var(--colorButton);
+} */
+.tab-list {
+    margin-left: 3%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-list li {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--colorButtonText);
+    color: white;
+    cursor: pointer;
+}
+
+.tab-list li:hover {
+    background-color: var(--secundaryColor);
+}
+.selected{
+    background-color: var(--selected) !important;
 }
 body{
     background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
@@ -130,18 +163,26 @@ body{
     margin-top: 900px;
 }
 .fotos{
-    border: red solid;
-    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+    margin-top: 15px;
 }
-.logo{
+
+.fotos img {
+    max-width: 100%;
+    height: auto;
+}
+/* .logo{
     width: 5%;
     height: 5%;
-}
+} */
 .language,
-.editor,
-.controlVersion,
-.engine,
-.db,
-.otros{
+.engine{
     display: flex;
+}
+.oculto{
+    display: none !important;
 }

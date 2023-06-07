@@ -76,3 +76,19 @@ function changeNav(who){
         }
     });
 }
+$(document).ready(function() {
+    $('ul li:contains("All")').click(function() {
+        $('li').removeClass( "selected" );
+        $(this).addClass("selected");
+        $('.fotos img').show();
+    });
+
+    $('ul li:not(:contains("All"))').click(function() {
+        $('li').removeClass( "selected" );
+        $(this).addClass("selected");
+        var category = $(this).text().toLowerCase();
+        category = category.replace(/\s/g, '');
+        $('.fotos img').hide();
+        $('.fotos img.' + category).show();
+    });
+  });
